@@ -477,20 +477,20 @@ const faqs = [
 
 // ── HOOKS ─────────────────────────────────────────────────
 function useCountdown() {
-  // Countdown to March 6, 2025
-  const target = new Date("2025-03-06T13:00:00").getTime();
-  const calc = () => {
-    const diff = Math.max(0, target - Date.now());
-    return {
-      d: Math.floor(diff / 86400000),
-      h: Math.floor((diff % 86400000) / 3600000),
-      m: Math.floor((diff % 3600000) / 60000),
-      s: Math.floor((diff % 60000) / 1000),
-    };
-  };
-  const [t, setT] = useState(calc());
+  const [t, setT] = useState({ d: 14, h: 0, m: 0, s: 0 });
   useEffect(() => {
-    const id = setInterval(() => setT(calc()), 1000);
+    const target = new Date("2026-03-06T13:00:00").getTime();
+    const tick = () => {
+      const diff = Math.max(0, target - Date.now());
+      setT({
+        d: Math.floor(diff / 86400000),
+        h: Math.floor((diff % 86400000) / 3600000),
+        m: Math.floor((diff % 3600000) / 60000),
+        s: Math.floor((diff % 60000) / 1000),
+      });
+    };
+    tick();
+    const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, []);
   return t;
@@ -615,7 +615,7 @@ export default function App() {
 
           <div className="hero-visual fi">
             <img
-              src="/fernando.png"
+              src="fernando.png"
               alt="Fernando Martínez — Clase Empoderamiento Empresarial"
               style={{aspectRatio:"16/9", objectPosition:"top center"}}
             />
@@ -710,7 +710,7 @@ export default function App() {
             <div className="speaker-img-wrap">
               <img
                 className="speaker-img"
-                src="/fernando.png"
+                src="fernando.png"
                 alt="Fernando Martínez — Psicólogo y Coach Empresarial"
               />
               <div className="speaker-stripe">Coach & Mentor Empresarial</div>
