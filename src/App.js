@@ -565,7 +565,7 @@ export default function App() {
 
           <div className="hero-visual fi">
             <img
-              src="https://randomuser.me/api/portraits/men/40.jpg"
+              src="/fernando.png"
               alt="Fernando Martínez — Clase Empoderamiento Empresarial"
               style={{aspectRatio:"16/9", objectPosition:"top center"}}
             />
@@ -660,7 +660,7 @@ export default function App() {
             <div className="speaker-img-wrap">
               <img
                 className="speaker-img"
-                src="https://randomuser.me/api/portraits/men/40.jpg"
+                src="/fernando.png"
                 alt="Fernando Martínez — Psicólogo y Coach Empresarial"
               />
               <div className="speaker-stripe">Coach & Mentor Empresarial</div>
