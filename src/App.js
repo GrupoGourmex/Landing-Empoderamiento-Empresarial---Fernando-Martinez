@@ -519,56 +519,6 @@ function FaqItem({ q, a }) {
   );
 }
 
-// ── FORM ──────────────────────────────────────────────────
-function RegistroForm() {
-  const [form, setForm] = useState({ nombre: "", email: "", whatsapp: "" });
-  const [sent, setSent] = useState(false);
-
-  const handle = e => setForm({ ...form, [e.target.name]: e.target.value });
-  const submit = e => {
-    e.preventDefault();
-    if (form.nombre && form.email && form.whatsapp) setSent(true);
-  };
-
-  if (sent) return (
-    <div className="form-box center">
-      <div style={{fontSize:56,marginBottom:16}}>🎉</div>
-      <h3 style={{color:"var(--dorado)",marginBottom:12}}>¡Lugar reservado!</h3>
-      <p style={{color:"rgba(240,237,232,0.7)",fontSize:15,lineHeight:1.7}}>
-        Te esperamos el <strong style={{color:"#fff"}}>6 de marzo</strong>.<br/>
-        Recibirás el link de Zoom en tu correo pronto.
-      </p>
-    </div>
-  );
-
-  return (
-    <div className="form-box">
-      <h3>Reserva tu <span style={{color:"var(--dorado)"}}>lugar gratis</span></h3>
-      <p className="form-sub">Solo {" "}<strong style={{color:"var(--dorado)"}}>cupos limitados</strong> disponibles · 6 de marzo</p>
-      <form onSubmit={submit}>
-        <div className="form-group">
-          <label>Nombre completo</label>
-          <input name="nombre" type="text" placeholder="Tu nombre" value={form.nombre} onChange={handle} required />
-        </div>
-        <div className="form-group">
-          <label>Correo electrónico</label>
-          <input name="email" type="email" placeholder="tu@correo.com" value={form.email} onChange={handle} required />
-        </div>
-        <div className="form-group">
-          <label>WhatsApp</label>
-          <input name="whatsapp" type="tel" placeholder="+52 55 0000 0000" value={form.whatsapp} onChange={handle} required />
-        </div>
-        <button type="submit" className="btn-gold" style={{marginTop:8}}>
-          ✅ Reservar mi lugar gratis ahora →
-        </button>
-      </form>
-      <p className="form-privacy">🔒 Tus datos están 100% seguros. No spam, jamás.</p>
-      <div className="form-guarantee">
-        <span>🎁</span> Clase gratuita · Sin tarjeta de crédito · Sin compromisos
-      </div>
-    </div>
-  );
-}
 
 const pad = n => String(n).padStart(2, "0");
 
