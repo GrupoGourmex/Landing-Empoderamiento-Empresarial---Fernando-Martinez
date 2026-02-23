@@ -615,7 +615,7 @@ export default function App() {
 
           <div className="hero-visual fi">
             <img
-              src="fernando.png"
+              src="https://randomuser.me/api/portraits/men/40.jpg"
               alt="Fernando Martínez — Clase Empoderamiento Empresarial"
               style={{aspectRatio:"16/9", objectPosition:"top center"}}
             />
@@ -639,7 +639,7 @@ export default function App() {
           </div>
 
           <div style={{maxWidth:500,margin:"28px auto 0"}} className="fi">
-            <a href="#registro" className="btn-gold">Reserva tu lugar gratis ahora →</a>
+            <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-gold">Reserva tu lugar gratis ahora →</a>
             <p style={{marginTop:12,fontSize:13,color:"#555"}}>🔒 Gratis · Sin tarjeta · Cupos limitados</p>
           </div>
 
@@ -673,7 +673,7 @@ export default function App() {
             ))}
           </div>
           <div className="center fi" style={{marginTop:36}}>
-            <a href="#registro" className="btn-outline" style={{display:"inline-block",width:"auto",padding:"14px 36px"}}>
+            <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{display:"inline-block",width:"auto",padding:"14px 36px"}}>
               Quiero aprender esto → 
             </a>
           </div>
@@ -696,7 +696,7 @@ export default function App() {
             ))}
           </ul>
           <div className="center fi" style={{marginTop:36}}>
-            <a href="#registro" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"16px 40px"}}>
+            <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"16px 40px"}}>
               Sí, quiero mi lugar gratuito →
             </a>
           </div>
@@ -710,7 +710,7 @@ export default function App() {
             <div className="speaker-img-wrap">
               <img
                 className="speaker-img"
-                src="fernando.png"
+                src="https://randomuser.me/api/portraits/men/40.jpg"
                 alt="Fernando Martínez — Psicólogo y Coach Empresarial"
               />
               <div className="speaker-stripe">Coach & Mentor Empresarial</div>
@@ -733,7 +733,7 @@ export default function App() {
                 <div className="sp-stat"><strong>15 años</strong><span>experiencia</span></div>
                 <div className="sp-stat"><strong>18</strong><span>países</span></div>
               </div>
-              <a href="#registro" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"15px 32px"}}>
+              <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"15px 32px"}}>
                 Reservar lugar con Fernando →
               </a>
             </div>
@@ -779,23 +779,46 @@ export default function App() {
               <li>No habrá grabación disponible</li>
               <li>Cupos limitados para garantizar calidad</li>
             </ul>
-            <a href="#registro" className="btn-gold" style={{marginTop:20}}>
+            <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-gold" style={{marginTop:20}}>
               Asegurar mi lugar ahora →
             </a>
           </div>
         </div>
       </section>
 
-      {/* ── REGISTRATION FORM ────────────────────────────── */}
+      {/* ── WHATSAPP CTA ──────────────────────────────────── */}
       <section className="sec" id="registro">
-        <div className="container">
-          <div className="center fi" style={{marginBottom:36}}>
-            <span className="sec-tag">Registro gratuito</span>
-            <div className="sec-title">Reserva tu lugar<br/><span className="gold">antes de que se agoten</span></div>
+        <div className="container center">
+          <div className="fi" style={{marginBottom:36}}>
+            <span className="sec-tag">Únete ahora</span>
+            <div className="sec-title">Entra al grupo de WhatsApp<br/><span className="gold">y recibe el link de Zoom</span></div>
             <div className="gold-line" />
           </div>
-          <div className="fi">
-            <RegistroForm />
+          <div className="fi" style={{maxWidth:560,margin:"0 auto"}}>
+            <div style={{background:"#0d0d0d",border:"2px solid #d4a843",borderRadius:4,padding:"40px 36px",boxShadow:"0 0 60px rgba(212,168,67,0.12)"}}>
+              <div style={{fontSize:64,marginBottom:16}}>💬</div>
+              <h3 style={{fontFamily:"'Oswald',sans-serif",fontSize:26,fontWeight:700,textTransform:"uppercase",marginBottom:8,color:"#d4a843"}}>
+                Únete al grupo gratuito
+              </h3>
+              <p style={{fontSize:15,color:"rgba(240,237,232,0.65)",marginBottom:8,lineHeight:1.7}}>
+                Al entrar al grupo recibirás:
+              </p>
+              <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:8,maxWidth:320,margin:"0 auto 28px",textAlign:"left"}}>
+                {["✅ El link de Zoom para el 6 de marzo","✅ Material exclusivo previo al evento","✅ Acceso directo a Fernando Martínez","✅ Comunidad de empresarios de alto nivel"].map((item,i)=>(
+                  <li key={i} style={{fontSize:14,color:"rgba(240,237,232,0.85)"}}>{item}</li>
+                ))}
+              </ul>
+              <a
+                href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS"
+                target="_blank" rel="noopener noreferrer"
+                style={{display:"block",background:"#25D366",color:"#000",fontFamily:"'Oswald',sans-serif",fontSize:20,fontWeight:700,letterSpacing:"0.04em",textTransform:"uppercase",padding:"18px 32px",borderRadius:4,textDecoration:"none",transition:"all 0.2s",marginBottom:12}}
+                onMouseEnter={e=>{e.currentTarget.style.background="#1db954";e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow="0 8px 32px rgba(37,211,102,0.45)"}}
+                onMouseLeave={e=>{e.currentTarget.style.background="#25D366";e.currentTarget.style.transform="none";e.currentTarget.style.boxShadow="none"}}
+              >
+                📲 Unirme al grupo de WhatsApp →
+              </a>
+              <p style={{fontSize:12,color:"#555"}}>🔒 Gratis · Sin spam · Solo contenido de valor</p>
+            </div>
           </div>
         </div>
       </section>
@@ -836,7 +859,7 @@ export default function App() {
             El 6 de marzo tienes una cita con tu mejor versión.<br/>
             <strong style={{color:"#fff"}}>Los cupos se están agotando — reserva ahora.</strong>
           </p>
-          <a href="#registro" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"18px 48px",fontSize:20}}>
+          <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="btn-gold" style={{display:"inline-block",width:"auto",padding:"18px 48px",fontSize:20}}>
             ✅ Reservar mi lugar gratis →
           </a>
           <p style={{marginTop:16,fontSize:13,color:"#333"}}>🔒 Gratis · Sin tarjeta de crédito · Solo Zoom</p>
@@ -850,13 +873,13 @@ export default function App() {
           <a href="/privacidad">Política de privacidad</a>
           <a href="/terminos">Términos de uso</a>
           <a href="/contacto">Contacto</a>
-          <a href="#registro">Registrarme</a>
+          <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer">Registrarme</a>
         </div>
         <p className="footer-copy">© 2025 Fernando Martínez · Todos los derechos reservados.</p>
       </footer>
 
       {/* STICKY MOBILE */}
-      <a href="#registro" className="sticky-bar">✅ Reservar lugar gratis — 6 de marzo →</a>
+      <a href="https://chat.whatsapp.com/C9ekPuyKhStDPOiqbpcFBS" target="_blank" rel="noopener noreferrer" className="sticky-bar">✅ Reservar lugar gratis — 6 de marzo →</a>
     </>
   );
 }
